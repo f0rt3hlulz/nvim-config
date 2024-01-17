@@ -29,7 +29,7 @@ return {
         name = "rose-pine",
         config = function()
             vim.cmd("colorscheme rose-pine")
-            disable_background = true
+            disable_background = false
             ColorMyPencils()
         end
     }
