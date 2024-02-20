@@ -13,6 +13,12 @@ function R(name)
     require("plenary.reload").reload_module(name)
 end
 
+vim.filetype.add({
+    extension = {
+        templ = 'templ',
+    }
+})
+
 autocmd('TextYankPost', {
     group = yank_group,
     pattern = '*',
