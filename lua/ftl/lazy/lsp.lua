@@ -45,6 +45,7 @@ return {
                 "lua_ls",
                 "rust_analyzer",
                 "gopls",
+                "pylsp",
             },
             handlers = {
                 function(server_name) -- default handler (optional)
@@ -85,7 +86,8 @@ return {
                                     }
                                 },
                             }
-                        }
+                        },
+                        offset_encoding = "utf-8", -- to fix this warning: multiple different client offset_encodings detected for buffer, vim.lsp.util._get_offset_encoding() uses the offset_encoding from the first client
                     }
                 end,
             }
